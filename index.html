@@ -107,49 +107,210 @@
   </header>
 
   <main id="main" class="wrap" tabindex="-1">
+    <!-- Hero -->
     <section class="hero" aria-labelledby="hero-title">
       <div>
         <img src="assets/IMG_7478.jpeg" alt="Photo of Qianchen Yu" class="hero-photo" />
         <span class="tag">Research interests</span>
         <h1 id="hero-title">Reinforcement learning–driven resource allocation in complex urban systems</h1>
         <p>
-          Ph.D. candidate, University of Florida — focused on AI for post-disaster housing recovery and simulation design.
+          Ph.D. student in Urban and Regional Planning at the University of Florida — working on AI-driven simulation and reinforcement learning for
+          post-disaster housing recovery, urban resilience, and construction scheduling.
         </p>
         <div class="kpi" aria-label="highlights">
           <span class="chip">PyRebuild simulator</span>
-          <span class="chip">RL for construction scheduling</span>
+          <span class="chip">RL for reconstruction scheduling</span>
           <span class="chip">GeoAI & discrete-event simulation</span>
         </div>
       </div>
       <aside class="hero-card" aria-label="quick profile">
         <h3 style="margin-top:6px">Quick profile</h3>
         <ul class="list">
-          <li><b>Location:</b> Gainesville, Florida</li>
+          <li><b>Location:</b> Gainesville, Florida, USA</li>
           <li><b>Email:</b> <a id="emailLink" href="#">your.name@domain.com</a></li>
           <li><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/qianchen-yu-05262424a/" target="_blank" rel="noopener">LinkedIn profile</a></li>
+          <li><b>Current focus:</b> Deep RL + simulation for post-disaster housing reconstruction</li>
         </ul>
       </aside>
     </section>
 
-    <!-- Research, Academics, Conferences, Experience, Skills sections remain unchanged -->
+    <!-- Research -->
+    <section id="research" aria-labelledby="research-title">
+      <h2 id="research-title">Research</h2>
+      <div class="card">
+        <h3>PyRebuild: Simulation and Deep RL for Post-Disaster Housing Reconstruction</h3>
+        <p>
+          <b>PyRebuild</b> is a Python-based discrete-event simulator that models post-earthquake housing reconstruction under resource constraints and uncertainty.
+          It serves as an AI-ready testbed for studying how different scheduling policies affect system-wide recovery, regional disparities, and household-level fairness.
+        </p>
+        <ul class="list">
+          <li>Models batched damage reporting, dynamic crew mobilization, and lognormal repair durations calibrated to real events (e.g., the 2018 Lombok earthquake).</li>
+          <li>Trains <b>PPO-based</b> reinforcement learning policies (Stable-Baselines3) for crew allocation and compares them to rule-based baselines (LJF, SJF, random).</li>
+          <li>Encodes fairness through waiting-time-based rewards and candidate ordering, enabling analysis of efficiency–equity trade-offs.</li>
+          <li>Explores transfer-learning setups where policies learned from one region are adapted to regions with different damage structures and resource levels.</li>
+        </ul>
+      </div>
+    </section>
 
+    <!-- Academics -->
+    <section id="academics" aria-labelledby="academics-title">
+      <h2 id="academics-title">Academics</h2>
+      <div class="timeline" aria-label="Academic path">
+        <div class="item">
+          <b>Ph.D. in Urban and Regional Planning</b>
+          <div>University of Florida, College of Design, Construction and Planning · 2024.08 – Present</div>
+          <div class="mono">Gainesville, Florida, USA</div>
+          <ul class="list">
+            <li>Research on post-disaster housing recovery, urban resilience, and RL-driven resource allocation.</li>
+            <li>Developing the PyRebuild simulator and PPO-based policies for reconstruction scheduling.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <b>Master of Regional Planning</b>
+          <div>Cornell University · 2022.08 – 2024.05</div>
+          <div class="mono">Ithaca, New York, USA</div>
+          <ul class="list">
+            <li>Concentration in urban data science and spatial analysis, with strong emphasis on Python-based spatial methods and GeoAI.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <b>B.Eng &amp; B.A in Urban Planning and Design</b>
+          <div>Xi'an Jiaotong-Liverpool University (joint program with University of Liverpool) · 2018.09 – 2022.07</div>
+          <div class="mono">Suzhou, China / Liverpool, UK</div>
+          <ul class="list">
+            <li>Training in urban economics, social inclusion, real-estate analysis, and multi-scale planning and design.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conferences -->
+    <section id="conferences" aria-labelledby="conferences-title">
+      <h2 id="conferences-title">Conferences & Workshops</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>CRC&CI 2026 (ASCE)</h3>
+          <p><b>Deep RL-based Transferable Scheduling for Post-Disaster Housing Reconstruction</b></p>
+          <p class="mono">Oral · Construction Research Congress & Computing in Civil Engineering · San Antonio, USA · March 2026 (forthcoming)</p>
+          <ul class="list">
+            <li>Extends PyRebuild with deep RL under stochastic disruptions and explores cross-region policy transfer.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>ACSP 2025</h3>
+          <p><b>Adaptive Post-Disaster Housing Reconstruction Scheduling: A Deep Reinforcement Learning Approach</b></p>
+          <p class="mono">Oral · Association of Collegiate Schools of Planning Annual Conference · Minneapolis, USA · October 2025</p>
+          <ul class="list">
+            <li>Discusses adaptive reconstruction schedules under changing resource and policy scenarios from a planning perspective.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>i3CE 2025 (ASCE)</h3>
+          <p><b>PyRebuild: A Simulation Framework for AI-Driven Adaptive Resource Allocation in Post-Disaster Housing Recovery</b></p>
+          <p class="mono">Talk · International Conference on Computing in Civil Engineering · New Orleans, USA · May 2025</p>
+          <ul class="list">
+            <li>Introduces the PyRebuild framework and evaluates rule-based scheduling strategies under incomplete information.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>AAAI 2025 AI4UP Workshop</h3>
+          <p><b>PyRebuild: A Python-Based Simulator For Dynamic Post-Earthquake Reconstruction</b></p>
+          <p class="mono">Poster · AI for Urban Planning (AI4UP) · Philadelphia, USA · March 2025</p>
+          <ul class="list">
+            <li>Presents PyRebuild as an AI-ready testbed for RL-based scheduling and fairness-aware resource allocation.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" aria-labelledby="experience-title">
+      <h2 id="experience-title">Experience</h2>
+      <div class="timeline">
+        <div class="item">
+          <b>Geospatial Analyst</b>
+          <div>uTECH Lab, Cornell University · 2023.09 – 2024.01</div>
+          <div class="mono">Ithaca, New York, USA</div>
+          <ul class="list">
+            <li>Contributed to a geospatial visualization framework for traffic–human–environment studies.</li>
+            <li>Built multi-source spatial datasets linking socio-economic indicators with road networks and land-use layers.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <b>Data & Geospatial Analyst Intern</b>
+          <div>CityDNA · 2022.06 – 2024.08</div>
+          <div class="mono">Beijing, China</div>
+          <ul class="list">
+            <li>Assisted in building urban spatial databases for site analysis and urban renewal projects.</li>
+            <li>Developed mapping workflows to turn analytical results into clear maps and graphics for planning practice.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <b>Research Assistant</b>
+          <div>Xi'an Jiaotong-Liverpool University · 2021.01 – 2021.04</div>
+          <div class="mono">Suzhou, China</div>
+          <ul class="list">
+            <li>Collected housing transaction and income data for eight major Chinese cities.</li>
+            <li>Constructed a housing affordability database and performed basic descriptive analysis and visualization.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Programming & ML / RL</h3>
+          <ul class="list">
+            <li><b>Python</b> (NumPy, pandas, PyTorch).</li>
+            <li><b>Stable-Baselines3</b> (PPO, DQN) for RL training on custom simulation environments.</li>
+            <li>R for statistical modeling and regression analysis.</li>
+            <li>Git-based workflows for experiment tracking and reproducible pipelines.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Data & Spatial Analysis</h3>
+          <ul class="list">
+            <li>Data cleaning, descriptive statistics, basic modeling, and visualization.</li>
+            <li><b>ArcGIS Pro</b> and <b>QGIS</b> for spatial data processing, mapping, and urban analysis.</li>
+            <li>Integration of socio-economic indicators with spatial units for planning and policy questions.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Research & Communication</h3>
+          <ul class="list">
+            <li>Experience writing research briefs, academic-style reports, and slides in English and Chinese.</li>
+            <li>Comfortable explaining technical results to planning, policy, and interdisciplinary audiences.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications -->
     <section id="publications" aria-labelledby="pubs-title">
       <h2 id="pubs-title">Publications</h2>
       <div class="card">
         <p style="margin-top:0;">
-          Yu, Q., Alisjahbana, I., & Wong, V. W. H. (2026). <i>Real-time adaptive scheduling of post-earthquake housing recovery using reinforcement learning</i>. 
-          ASCE i3CE / CRC (details as applicable).
+          Yu, Q., Alisjahbana, I., &amp; Wong, V. W. H. (2026).
+          <i>Optimizing Post-Disaster Housing Reconstruction Scheduling under Stochastic Disruptions using Deep Reinforcement Learning</i>.
+          Accepted in the ASCE <b>Construction Research Congress & Computing in Civil Engineering (CRC&amp;CI 2026)</b> conference proceedings.
         </p>
         <p>
-          <a class="btn" href="/papers/asce.pdf" target="_blank" rel="noopener">📄 PyRebuild</a>
+          <a class="btn" href="/papers/asce.pdf" target="_blank" rel="noopener">📄 Paper (draft / preprint)</a>
         </p>
       </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact" aria-labelledby="contact-title">
       <h2 id="contact-title">Let’s connect</h2>
       <div class="card">
-        <p>I’m eager to collaborate on projects at the intersection of urban resilience, AI, and geospatial intelligence.</p>
+        <p>
+          I am happy to discuss collaborations or internships at the intersection of
+          urban resilience, AI-driven simulation, reinforcement learning, and social/urban computing.
+        </p>
         <p>
           <a class="btn" href="#" id="mailtoBtn" aria-label="Send email">📧 Email</a>
           <a class="btn" href="https://www.linkedin.com/in/qianchen-yu-05262424a/" target="_blank" rel="noopener">LinkedIn</a>
